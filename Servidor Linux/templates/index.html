@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Control Room</title>
+</head>
+<body>
+    
+    
+
+    <div class="appearances">
+      <div class="screws">
+          
+          <img id="screw" class="Pscrew1" width="35" height="35" src="../static/img/screwG2-removebg-preview.png">
+          <img id="screw" class="Pscrew2" width="35" height="35" src="../static/img/screwG2-removebg-preview.png">
+          <img id="screw" class="Pscrew3" width="35" height="35" src="../static/img/screwG2-removebg-preview.png">
+          <img id="screw" class="Pscrew4" width="35" height="35" src="../static/img/screwG2-removebg-preview.png">
+          <img id="screw" class="Pscrew5" width="35" height="35" src="../static/img/screwG2-removebg-preview.png">
+          <img id="screw" class="hand" width="270" height="270" src="../static/img/hand.png">
+          <img id="screw" class="DoNot" width="150" height="150" src="../static/img/DoNot.png">
+          
+          <img id="screw" class="accident" width="150" height="150" src="../static/img/accident.png">
+      </div>
+      <div class="all">
+         <h1>Control Room</h1>
+         <div class="panel">
+	     <button1 ontouchstart="enviarComando('frente')" ontouchend="enviarComando('parar')" onmousedown="enviarComando('frente')" onmouseup="enviarComando('parar')">Frente</button1>
+             <button2 ontouchstart="enviarComando('tras')" ontouchend="enviarComando('parar')" onmousedown="enviarComando('tras')" onmouseup="enviarComando('parar')">Trás</button2>
+             <button3 ontouchstart="enviarComando('esquerda')" ontouchend="enviarComando('parar')" onmousedown="enviarComando('esquerda')" onmouseup="enviarComando('parar')">Esquerda</button3>
+             <button4 ontouchstart="enviarComando('direita')" ontouchend="enviarComando('parar')" onmousedown="enviarComando('direita')" onmouseup="enviarComando('parar')">Direita</button4>
+
+             <img id="screw" class="screw1" width="25" height="25" src="../static/img/screwG-removebg-preview.png">
+             <img id="screw" class="screw2" width="25" height="25" src="../static/img/screwG-removebg-preview.png">
+             <img id="screw" class="screw3" width="25" height="25" src="../static/img/screwG-removebg-preview.png">
+             <img id="screw" class="screw4" width="25" height="25" src="../static/img/screwG-removebg-preview.png">
+             <img id="screw" class="screw5" width="25" height="25" src="../static/img/screwG-removebg-preview.png">
+             <img id="screw" class="hello" width="70" height="70" src="../static/img/hello.png">
+         </div>
+	  
+	 <img id="videoElement" class="video" src="{{ url_for('video_feed') }}" width="640" height="480">
+     
+    </div>
+
+    <script>
+        const socket = new WebSocket('ws://192.168.43.46:81'); // IP da ESP32-CAM
+
+        function enviarComando(comando) {
+            socket.send(comando);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+           const buttons = document.querySelectorAll('button');
+
+           buttons.forEach(button => {
+              button.addEventListener('touchstart', function () {
+                 const command = this.getAttribute('data-command');
+                 enviarComando(command);
+              });
+
+              button.addEventListener('touchend', function () {
+                 enviarComando('parar');
+              });
+
+              button.addEventListener('mousedown', function () {
+                 const command = this.getAttribute('data-command');
+                 enviarComando(command);
+              });
+
+              button.addEventListener('mouseup', function () {
+                 enviarComando('parar');
+              });
+           });
+        });
+
+
+    </script>    
+
+</body>
+</html>

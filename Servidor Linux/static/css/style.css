@@ -1,0 +1,310 @@
+/* CORPO */
+
+body{
+	font-family: Nunito, sans-serif;
+	background-image: url("../img/darksteel.png");
+
+	position: absolute;
+	width: 120%;
+	height: 120%;
+}
+.appearances{
+	position: absolute;
+	width: auto;
+	height: auto;
+
+	user-select: none;
+	
+}
+
+h1{
+	font-family: Asap, sans-serif;
+	background:  #b48811; background: -moz-linear-gradient(top, #ebd197 0%, #b48811 50%, #a2790d 51%, #bb9b49 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebd197), color-stop(50%,#b48811), color-stop(51%,#a2790d), color-stop(100%,#bb9b49)); background: -webkit-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -o-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -ms-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: linear-gradient(to bottom, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd197', endColorstr='#b48811',GradientType=0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: absolute;
+	left: 60px;
+	width: 18%;
+	user-select: none;
+
+	top: -10px;
+	left: 130px;
+
+	box-shadow: 0 2px 3px 2px #1c0101;
+    text-align: center;
+}
+
+.screws{
+	position: absolute;
+	top: 26px;
+	left: 30px;
+	padding: 1px;
+	width: 145%;
+	height: 445px;
+	z-index: 2;
+
+	/*border: 70px solid grey;
+	border-image: url("../img/screwsS1.png") 33% round;
+	border-radius: 15px;*/
+
+}
+
+.all{
+	position: relative;
+	top: 30px;
+	left: 30px;
+	padding: 1px;
+	background: linear-gradient(0deg, #361313 0%, #5e2222 25%, #210c0c 50%, #5e2222 75%, #361313 100%);
+	width: 145%;
+	height: 445px;
+
+	border: 70px solid grey;
+	border-image: url("../img/hehe.png") 33% round;
+	border-radius: 15px;
+
+
+
+	box-shadow: 0 5px 2px 7px #1c0101;
+
+
+}
+
+
+.panel{
+	position: absolute;
+	top: 70px;
+	left: 50px;
+	padding: 1px;
+	border: 7px solid #590505;
+	border-radius: 8px;
+	width: 30%;
+	height: 300px;
+    background: linear-gradient(0deg, #363635 0%, #70706e 25%, #242423 50%, #70706e 75%, #363635 100%);
+    box-shadow: 0 5px 2px 7px #4a0404;
+    
+}
+
+.screw2{
+	position: absolute;
+	top: 92%;
+	left: 0%;
+}
+
+.screw3{
+	position: absolute;
+	top: 0%;
+	left: 92%;
+}
+
+.screw4{
+	position: absolute;
+	top: 92%;
+	left: 92%;
+}
+
+.screw5{
+	position: absolute;
+	top: 46%;
+	left: 47.5%;
+}
+
+button1 {
+	width: 77px;
+	color: #5e5e5c ;
+	background: linear-gradient(90deg, #300000 0%, #540101 25%, #1c0000 50%, #540101 75%, #300000 100%); 
+	display: inline-block;
+	padding: 12px 22px;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border-radius: 20%;
+	box-shadow: 0 9px #333333;
+	border: 1px solid #242323;
+
+	position: absolute;
+	top: 20px;
+	left: 115px;
+
+	z-index: 3;
+}
+
+	button1:hover{background: #2b0202;} 
+button1:active{
+	background:  #b48811; background: -moz-linear-gradient(top, #ebd197 0%, #b48811 50%, #a2790d 51%, #bb9b49 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebd197), color-stop(50%,#b48811), color-stop(51%,#a2790d), color-stop(100%,#bb9b49)); background: -webkit-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -o-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -ms-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: linear-gradient(to bottom, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd197', endColorstr='#b48811',GradientType=0);
+	box-shadow: 0 5px #1f1e1e;
+	transform: translateY(4px);
+}
+
+button2 {
+	width: 77px;
+	color: #5e5e5c ;
+	background: linear-gradient(90deg, #300000 0%, #540101 25%, #1c0000 50%, #540101 75%, #300000 100%);
+	display: inline-block;
+	padding: 12px 22px;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border-radius: 20%;
+	box-shadow: 0 9px #333232;
+	border: 1px solid #242323; 
+
+	position: absolute;
+	top: 220px;
+	left: 115px;
+	z-index: 3;
+}
+
+	button2:hover{background: #2b0202;} 
+button2:active{
+	background:  #b48811; background: -moz-linear-gradient(top, #ebd197 0%, #b48811 50%, #a2790d 51%, #bb9b49 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebd197), color-stop(50%,#b48811), color-stop(51%,#a2790d), color-stop(100%,#bb9b49)); background: -webkit-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -o-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -ms-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: linear-gradient(to bottom, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd197', endColorstr='#b48811',GradientType=0);
+	box-shadow: 0 5px #1f1e1e;
+	transform: translateY(4px);
+}
+
+button3 {
+	width: 77px;
+	color: #5e5e5c ;
+	background: linear-gradient(90deg, #300000 0%, #540101 25%, #1c0000 50%, #540101 75%, #300000 100%);
+	display: inline-block;
+	padding: 12px 22px;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border-radius: 20%;
+	box-shadow: 0 9px #333333; 
+	border: 1px solid #242323;
+
+	position: absolute;
+	top: 120px;
+	left: 10px;
+	z-index: 3;
+}
+
+	button3:hover{background: #2b0202;} 
+button3:active{
+	background:  #b48811; background: -moz-linear-gradient(top, #ebd197 0%, #b48811 50%, #a2790d 51%, #bb9b49 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebd197), color-stop(50%,#b48811), color-stop(51%,#a2790d), color-stop(100%,#bb9b49)); background: -webkit-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -o-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -ms-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: linear-gradient(to bottom, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd197', endColorstr='#b48811',GradientType=0);
+	box-shadow: 0 5px #1f1e1e;
+	transform: translateY(4px);
+}
+
+button4 {
+	width: 77px;
+	color: #5e5e5c ;
+	background: linear-gradient(90deg, #300000 0%, #540101 25%, #1c0000 50%, #540101 75%, #300000 100%);
+	display: inline-block;
+	padding: 12px 22px;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border-radius: 20%;
+	box-shadow: 0 9px #333232;
+	border: 1px solid #242323;
+
+	position: absolute;
+	top: 120px;
+	left: 220px; 
+	z-index: 3;
+}
+
+	button4:hover{background: #2b0202;} 
+button4:active{
+	background:  #b48811; background: -moz-linear-gradient(top, #ebd197 0%, #b48811 50%, #a2790d 51%, #bb9b49 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebd197), color-stop(50%,#b48811), color-stop(51%,#a2790d), color-stop(100%,#bb9b49)); background: -webkit-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -o-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: -ms-linear-gradient(top, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); background: linear-gradient(to bottom, #ebd197 0%,#b48811 50%,#a2790d 51%,#bb9b49 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd197', endColorstr='#b48811',GradientType=0);
+	box-shadow: 0 5px #1f1e1e;
+	transform: translateY(4px);
+}
+
+.video{
+	position: relative;
+	top: -25px;
+	left: 42%;
+	padding: 1px;
+	border: 7px solid #590505;
+	border-radius: 8px;
+	box-shadow: 0 5px 2px 7px #4a0404;
+
+	z-index: 3;
+	
+	
+}
+
+.ThatThing{
+	position: absolute;
+	top: -16px;
+	left: 42.7%;
+	background-image: url("../img/YouDoNotRecogniseTheBodiesInTheScreen.gif");
+	opacity: 0.3;
+
+	z-index: 5;
+
+}
+
+.Pscrew1{
+	position: absolute;
+	top: 2%;
+	left: 0.5%;
+
+}
+
+.Pscrew2{
+	position: absolute;
+	top: 124%;
+	left: 0.5%;
+}
+
+.Pscrew3{
+	position: absolute;
+	top: 2%;
+	left: 53.25%;
+}
+
+.Pscrew4{
+	position: absolute;
+	top: 2%;
+	left: 108.5%;
+}
+
+.Pscrew5{
+	position: absolute;
+	top: 124%;
+	left: 108.5%;
+}
+
+.hand{
+	position: absolute;
+	top: 25%;
+	left: 112.89%;
+}
+
+.hello{
+	position: absolute;
+	top: 70%;
+	left: 9%;
+
+	z-index: 1;
+}
+
+.DoNot{
+	position: absolute;
+	top: 3.5%;
+	left: 92.6%;
+
+	z-index: 4;
+}
+
+.accident{
+	position: absolute;
+	top: 137%;
+	left: 33%;
+}
+
+
+
+}
