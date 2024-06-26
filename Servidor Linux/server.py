@@ -5,7 +5,6 @@ import urllib.request
 
 app = Flask(__name__)
 
-# Replace the URL with the IP camera's stream URL
 url = 'http://192.168.43.46/cam-lo.jpg'
 
 def generate_frames():
